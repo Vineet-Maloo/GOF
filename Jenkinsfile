@@ -11,7 +11,7 @@ node()
 	}
   stage('archive artifacts')
 	{
-	archiveArtifacts '/gameoflife-web/target/*.war'
+	archive'gameoflife-web/target/*.war'
 	}
 
 }
