@@ -4,7 +4,7 @@ node()
 
   stage('git package')
 	{
-checkout([$class: 'GitSCM', branches: [[name: '$Branchname']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Vineet-Maloo/GOF.git']]])
+checkout([$class: 'GitSCM', branches: [[name: '$Branch_name']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Vineet-Maloo/GOF.git']]])
 	}
   stage('package')
 	{
